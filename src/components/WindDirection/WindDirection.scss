@@ -1,0 +1,23 @@
+.wind-direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .317222rem;
+  &__circle {
+    display: inline-flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  &__icon {
+    align-self: center;
+  }
+  &__text {
+    font-size: .777778rem;
+    line-height: .913333rem;
+    font-weight: 500;
+    color: #E7E7EB;
+  }
+}

@@ -1,0 +1,33 @@
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // width: 328px;
+  height: 204px;
+  box-sizing: border-box;
+  background: #1E213A;
+  padding: 22px;
+  color: #fff;
+  &__title {
+    font-size: .888889rem;
+    line-height: 1.055556rem;
+    font-weight: 500;
+  }
+  &__quantity {
+    justify-self: start;
+    strong {
+      font-size: 3.555556rem;
+      font-weight: 700;
+      line-height: 4.166667rem;
+    }
+    span {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.333333rem;
+    }
+  }
+  &__option {
+    width: 100%;
+  }
+}

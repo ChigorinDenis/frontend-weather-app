@@ -1,0 +1,28 @@
+.results {
+  margin-top: 58px;
+  max-height: 80vh;
+  overflow-y: auto;
+  &__item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 23px 12px;
+    box-sizing: border-box;
+    color:#E7E7EB;
+    font-size: .888889rem;
+    border: 1px solid transparent;
+    transition: all 0.1s ease-in;
+    
+    &:hover {
+      border-color: #616475;
+      &> span {
+        color:#616475;
+      }
+    }
+    span {
+      color: transparent;
+    }
+  }
+}

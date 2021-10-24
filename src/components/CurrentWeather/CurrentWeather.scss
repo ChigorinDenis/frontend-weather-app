@@ -1,0 +1,103 @@
+.current-weather {
+  min-width: 375px;
+  background: #1E213A;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 9.15% 0 11.32%;
+  // padding: 2.91% 4.44% 3.61%;
+  &__sticky-contaier {
+    position: sticky;
+    top: 55px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url(../../img/Cloud-background.png);
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: center 20%;
+      background-clip: border-box;
+      opacity: 5%;
+    }
+  }
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    width: 79.95%;
+    margin: 0 auto;
+    &__btn {
+      height: 40px;
+      cursor: pointer;
+      box-sizing: border-box;
+      padding: 11px 18px;
+      background:#6E707A;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color:#E7E7EB;
+      font-size: .888889rem;
+      z-index: 3;
+    }
+    &__circle {
+      height: 40px;
+      width: 40px;
+      background:#6E707A;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: #E7E7EB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+    }
+  }
+  &__icon {
+    margin-top: 20.74%;
+    text-align: center;
+  }
+  &__index {
+    color: #E7E7EB;
+    margin-top: 29.74%;
+    text-align: center;
+    &__value {
+      font-size: 8rem;
+      font-weight: 500;
+      line-height: 9.388889rem;
+    }
+    &__unit {
+      font-size: 2.666667rem;
+      font-weight: 100;
+      line-height: 3.111111rem;
+    }
+  }
+  &__status {
+    margin-top: 29.74%;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    color:#A09FB1;
+  }
+  &__info {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.166667rem;
+    color: #88869D;
+    &__date {
+      display: flex;
+      justify-content: center;
+      column-gap: 16px;
+    }
+    &__local {
+      margin-top: 36px;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,34 @@
+$big-size: 56px;
+$big-width: 5px;
+
+$small-size: 15px;
+$small-width: 2px;
+
+.preloader{
+  &.global {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &.big {
+    width : $big-size;
+    height: $big-size;
+    border-width: $big-width;
+  }
+  &.small {
+    width : $small-size;
+    height: $small-size;
+    border-width: $small-width;
+  }
+  border-style: solid;
+  border-color: #fff;
+  border-bottom-color: #3C47E9;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}

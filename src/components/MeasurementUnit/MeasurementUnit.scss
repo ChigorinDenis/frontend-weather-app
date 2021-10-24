@@ -1,0 +1,24 @@
+.measurement{
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 12px;
+  margin-top: 52px;
+  margin-bottom: 75px;
+  &__btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #585676;
+    color: #E7E7EB;
+    font-size: 1rem;
+    font-weight: 700;
+    &_active {
+      color:#110E3C;
+      background: #E7E7EB;
+    }
+  }
+}

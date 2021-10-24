@@ -1,0 +1,32 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E213A;
+  box-sizing: border-box;
+  width: 120px;
+  height: 178px;
+  padding: 22px 18px;
+  color:  #E7E7EB;
+  &__title {
+    font-size: .888889rem;
+    font-weight: 600;
+    line-height: 1.043333rem;
+    
+  }
+  &__icon {
+    width: 56px;
+  }
+  &__range {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: .888889rem;
+    line-height: 1.043333rem;
+    font-weight: 600;
+    &__upper{
+      color: #A09FB1;
+    }
+  }
+}
